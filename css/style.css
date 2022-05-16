@@ -40,6 +40,7 @@ a {
 /* header */
 .header {
   padding: 24px 0;
+  border: solid 1px #2196f3;
 }
 .header__wrapper {
   display: flex;
@@ -48,12 +49,18 @@ a {
 .nav__list {
   display: flex;
   margin-left: 50px;
+  align-items: center;
 }
+
 .contacts {
   display: flex;
 }
 .contacts__link {
   display: flex;
+}
+.contacts__mail {
+  display: inline-block;
+  margin-left: 25px;
 }
 .nav__item {
   margin-left: 50px;
@@ -72,4 +79,33 @@ a {
 }
 .header__inner {
   display: flex;
+}
+
+/* main menu*/
+.menu-list {
+  display: flex;
+  justify-content: center;
+}
+.menu-list__nav {
+  display: inline;
+}
+.menu-link:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+.menu-link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgb(7, 2, 2);
+  padding: 5px 10px;
+  background: #f5f4fa;
+  border-radius: 5px;
+  border: solid 1px #f5f4fa;
+  margin-left: 10px;
+}
+
+.wrapper {
+  padding: 94px 0;
 }
