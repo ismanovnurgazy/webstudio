@@ -39,8 +39,8 @@ a {
 
 /* header */
 .header {
+  width: 100%;
   padding: 24px 0;
-  border: solid 1px #2196f3;
 }
 .header__wrapper {
   display: flex;
@@ -108,4 +108,12 @@ a {
 
 .wrapper {
   padding: 94px 0;
+}
+
+.item__foto {
+  margin-top: 34px;
+}
+.flex__box {
+  display: flex;
+  flex-wrap: wrap;
 }
