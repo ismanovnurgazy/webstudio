@@ -1,10 +1,8 @@
 .body {
   margin: 0;
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-
   color: #707070;
 }
 *,
@@ -29,6 +27,9 @@ ul {
 a {
   text-decoration: none;
 }
+section {
+  padding: 94px 0;
+}
 
 /* COMMON */
 .container {
@@ -46,26 +47,39 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.nav__list {
+.header__nav-list {
   display: flex;
-  margin-left: 50px;
+  
   align-items: center;
 }
-
-.contacts {
+.header__nav-link:focus {
+  color: #2196F3;
+}
+.header__nav-link {
+  color: black;
+}
+.header__contacts {
+  display: flex;
+  align-items: center;
+}
+.header__contacts-link {
   display: flex;
 }
-.contacts__link {
-  display: flex;
+.header__contacts-mail {
+  color: #757575
 }
-.contacts__mail {
+.header__contacts-mail:hover {
   display: inline-block;
-  margin-left: 25px;
+  color: #2196F3;
 }
-.nav__item {
+.header__contacts-list:not(:first-child) {
   margin-left: 50px;
 }
-.nav__logo {
+.header__nav-item:not(:first-child) {
+  margin-left: 50px;
+}
+.header__nav-logo {
+  margin-right: 93px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -74,9 +88,10 @@ a {
   letter-spacing: 0.03em;
   color: black;
 }
-.logo__style {
+.header__logo-style {
   color: #2196f3;
 }
+
 .header__inner {
   display: flex;
 }
@@ -151,7 +166,6 @@ a {
   font-size: 16px;
   line-height: 30px;
   color: #ffffff;
-
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -159,6 +173,8 @@ a {
 }
 
 /* Ul Li info */
-.info__item {
+.doing__list:not(:last-child) {
   display: flex;
+  margin-right: 30px;
 }
+
