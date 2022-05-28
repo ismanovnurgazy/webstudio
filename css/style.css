@@ -28,7 +28,7 @@ a {
   text-decoration: none;
 }
 section {
-  padding: 94px 0;
+  padding: 0 0;
 }
 
 /* COMMON */
@@ -39,6 +39,9 @@ section {
 }
 
 /* header */
+:root {
+  --text-subtitle: #757575
+}
 .header {
   width: 100%;
   padding: 24px 0;
@@ -170,11 +173,69 @@ section {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px solid #2196f3;
+  cursor: pointer;
 }
 
 /* Ul Li info */
-.doing__list:not(:last-child) {
+.info {
+  padding: 94px;
+}
+.item__text {
+  font-family: 'Roboto';
+  font-style: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #212121;
+  
+}
+.info__item:nth-child(1n) {
   display: flex;
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+/* .text-subtitle:nth-child(2n) {
+  margin-left: 30px;
+} */
+.item__text-subtitle {
+  font-family: 'Roboto';
+  font-style: regular;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 3%;
+  color: #757575;
+}
+
+.doing__list {
+  display: flex;
+  justify-content: space-between;
+}
+.doing__title {
+text-align: center;
+font-family: 'roboto';
+font-style: bold;
+font-size: 36px;
+line-height: 42px;
+border-radius: 4px;
+padding: 50px;
+}
+.team {
+  padding-top: 188px;
+}
+.team__title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: 'roboto';
+  font-style: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #212121;
+}
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}
+.footer {
+  background-color: #2F303A;
 }
 
