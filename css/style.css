@@ -1,9 +1,8 @@
-.body {
+body {
   margin: 0;
-  font-family: "Roboto";
+  /* font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
-  color: #707070;
+  font-weight: 400; */
 }
 *,
 *::before,
@@ -151,7 +150,7 @@ section {
   color: #ffffff;
 }
 .hero {
-  padding: 200px;
+  padding: 200px 0;
   background-color: #2f303a;
   background-repeat: no-repeat;
   text-align: center;
@@ -178,9 +177,10 @@ section {
 
 /* Ul Li info */
 .info {
-  padding: 94px;
+  padding: 94px 0;
 }
 .item__text {
+  margin-bottom: 10px;
   font-family: 'Roboto';
   font-style: bold;
   font-size: 14px;
@@ -196,6 +196,7 @@ section {
   margin-left: 30px;
 } */
 .item__text-subtitle {
+  
   font-family: 'Roboto';
   font-style: regular;
   font-weight: 900;
@@ -205,6 +206,8 @@ section {
   letter-spacing: 3%;
   color: #757575;
 }
+
+/* Doing info */
 
 .doing__list {
   display: flex;
@@ -217,10 +220,14 @@ font-style: bold;
 font-size: 36px;
 line-height: 42px;
 border-radius: 4px;
-padding: 50px;
+margin-bottom: 50px;
 }
+
+/* TEAM info */
+
 .team {
-  padding-top: 188px;
+  padding: 94px 0;
+  background-color: #F5F4FA;
 }
 .team__title {
   margin-bottom: 50px;
@@ -235,7 +242,42 @@ padding: 50px;
   display: flex;
   justify-content: space-between;
 }
-.footer {
-  background-color: #2F303A;
+.team__list-inner {
+  padding: 30px 0;
+  text-align: center;
+}
+.team__list-item {
+  background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+.team__list-subtitle {
+  margin-bottom: 10px;
 }
 
+/* Footer */
+
+.footer {
+  padding: 60px 0;
+  background-color: #2F303A;
+}
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer__contacts-link {
+  display: block;
+  margin-top: 9px;
+}
+.footer__contacts-number {
+  display: block;
+  margin-top: 9px;
+}
