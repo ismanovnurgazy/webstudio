@@ -51,14 +51,23 @@ section {
 }
 .header__nav-list {
   display: flex;
-  
   align-items: center;
+}
+.nav__item:not(:first-child) {
+  margin-left: 30px;
 }
 .header__nav-link:focus {
   color: #2196F3;
 }
 .header__nav-link {
   color: black;
+  display: flex;
+}
+.contacts {
+  display: flex;
+}
+.contacts__mail {
+  margin-left: 30px;
 }
 .header__contacts {
   display: flex;
@@ -80,7 +89,7 @@ section {
 .header__nav-item:not(:first-child) {
   margin-left: 50px;
 }
-.header__nav-logo {
+.nav__logo {
   margin-right: 93px;
   font-family: "Raleway";
   font-style: normal;
@@ -122,7 +131,9 @@ section {
   border: solid 1px #f5f4fa;
   margin-left: 10px;
 }
-
+.nav__list {
+  display: flex;
+}
 .wrapper {
   padding: 94px 0;
 }
@@ -133,6 +144,17 @@ section {
 .flex__box {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 56px;
+}
+.flex-item__box {
+  width: 370px;
+  height: 404px;
+  left: 615px;
+  top: 262px;
+
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
 }
 
 /*WebStudio Главная страница  */
@@ -174,7 +196,16 @@ section {
   border: 1px solid #2196f3;
   cursor: pointer;
 }
-
+.header__nav-logo {
+  margin-right: 93px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: black;
+}
 /* Ul Li info */
 .info {
   padding: 94px 0;
@@ -248,9 +279,9 @@ margin-bottom: 50px;
 }
 .team__list-item {
   background: #FFFFFF;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team__list-subtitle {
   margin-bottom: 10px;
